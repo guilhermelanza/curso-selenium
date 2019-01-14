@@ -1,0 +1,11 @@
+import org.openqa.selenium.WebDriver;
+
+public class TesteGoogle {
+	
+	public static void main(String[] args) {
+		System.setProperty("webdriver.gecko.driver", "C:/WSCursoWebdriver/geckodriver.exe");
+		WebDriver driver = new
+		
+	}
+
+}
