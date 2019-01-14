@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="TesteGoogle (1)" project="CursoSelenium01" tests="1" started="1" failures="0" errors="0" ignored="0">
-  <testsuite name="TesteGoogle" time="14.008">
-    <testcase name="teste" classname="TesteGoogle" time="14.008"/>
-  </testsuite>
-</testrun>
