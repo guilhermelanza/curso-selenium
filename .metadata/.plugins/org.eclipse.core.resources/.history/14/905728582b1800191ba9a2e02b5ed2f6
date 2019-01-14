@@ -1,0 +1,27 @@
+import org.junit.Assert;
+import org.junit.Test;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class TesteAlert {
+	
+	public WebDriver abreNavegador(WebDriver driver) {
+		System.setProperty("webdriver.chrome.driver", "C:/WSCursoWebdriver/chromedriver.exe");
+		WebDriver driverConnect = new ChromeDriver();
+		driverConnect.manage().window().maximize();
+		driverConnect.get(System.getProperty("user.dir") + "/src/main/resources/componentes.html");
+		return driverConnect;
+	}
+
+	@Test
+	public void deveBuscarTextosNaPagina() {
+		abreNavegador(driver);
+
+		
+		Assert.assertEquals("Campo de Treinamento", driver.findElement(By.tagName("h3")).getText());
+		Assert.assertEquals("Cuidado onde clica, muitas armadilhas...", driver.findElement(By.className("facilAchar")).getText());
+		
+		driver.quit();
+	}
+}

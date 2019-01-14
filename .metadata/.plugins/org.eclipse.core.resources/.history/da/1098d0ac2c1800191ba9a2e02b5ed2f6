@@ -1,0 +1,26 @@
+import org.junit.Test;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class TesteAlert {
+	
+	public WebDriver abreNavegador(WebDriver driver) {
+		System.setProperty("webdriver.chrome.driver", "C:/WSCursoWebdriver/chromedriver.exe");
+		WebDriver driverConnect = new ChromeDriver();
+		driverConnect.manage().window().maximize();
+		driverConnect.get(System.getProperty("user.dir") + "/src/main/resources/componentes.html");
+		return driverConnect;
+	}
+
+	@Test
+	public void deveBuscarTextosNaPagina() {
+		System.setProperty("webdriver.chrome.driver", "C:/WSCursoWebdriver/chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
+		abreNavegador(driver);
+		
+		driver.findElement(By.id("alert")).click();
+		
+		driver.quit();
+	}
+}
