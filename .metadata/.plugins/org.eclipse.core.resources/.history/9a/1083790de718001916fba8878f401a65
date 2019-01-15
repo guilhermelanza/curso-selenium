@@ -1,0 +1,81 @@
+package br.com.lanza.source;
+
+import org.junit.After;
+import org.junit.Assert;
+import org.junit.Before;
+import org.junit.Ignore;
+import org.junit.Test;
+import org.openqa.selenium.Alert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class TesteAlert {
+
+	private WebDriver driver;
+	
+	@Before
+	public void inicializaTeste() {
+		System.setProperty("webdriver.chrome.driver", "C:/WSCursoWebdriver/chromedriver.exe");
+		driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.get(System.getProperty("user.dir") + "/src/main/resources/componentes.html");
+	}
+	
+	@After
+	public void finalizaTeste() {
+		driver.quit();
+	}
+
+	@Test
+	@Ignore
+	public void deveInteragirComAlertSimples() {
+		driver.findElement(By.id("alert")).click();
+		Alert alerta = driver.switchTo().alert();
+		String textoAlerta = alerta.getText();
+		Assert.assertEquals("Alert Simples", textoAlerta);
+		alerta.accept();
+
+		driver.findElement(By.id("elementosForm:nome")).sendKeys(textoAlerta);
+
+		driver.quit();
+	}
+
+	@Test
+	@Ignore
+	public void deveInteragirComAlertConfirm() {
+		driver.get("file:///" + System.getProperty("user.dir") + "/src/main/resources/componentes.html");
+		driver.findElement(By.id("confirm")).click();
+		Alert alert = driver.switchTo().alert();
+		String texto = alert.getText();
+		Assert.assertEquals("Confirm Simples", texto);
+		alert.accept();
+		Alert alert2 = driver.switchTo().alert();
+		String texto2 = alert.getText();
+		Assert.assertEquals("Confirmado", texto2);
+		alert2.accept();
+
+		driver.findElement(By.id("confirm")).click();
+		alert = driver.switchTo().alert();
+		texto = alert.getText();
+		Assert.assertEquals("Confirm Simples", alert.getText());
+		alert.dismiss();
+		Assert.assertEquals("Negado", alert.getText());
+		driver.quit();
+	}
+
+	@Test
+	@Ignore
+	public void deveInteragirComAlertPrompt() {
+		driver.findElement(By.id("prompt")).click();
+		Alert alerta = driver.switchTo().alert();
+		Assert.assertEquals("Digite um numero", alerta.getText());
+		alerta.sendKeys("17");
+		alerta.accept();
+		Assert.assertEquals("Era 17?", alerta.getText());
+		alerta.accept();
+		Assert.assertEquals(":D", alerta.getText());
+		alerta.accept();
+	}
+
+}

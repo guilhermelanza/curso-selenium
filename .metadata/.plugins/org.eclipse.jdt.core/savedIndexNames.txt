@@ -31,7 +31,6 @@ INDEX VERSION 1.131+C:\WSCursoWebdriver\.metadata\.plugins\org.eclipse.jdt.core
 4107804936.index
 866495595.index
 3964918290.index
-1382878964.index
 3973197800.index
 2334401023.index
 3093655793.index

@@ -1,0 +1,18 @@
+package br.com.lanza.source;
+import org.junit.Assert;
+import org.junit.Test;
+import org.openqa.selenium.WebDriver;
+
+import br.com.lanza.utils.AbrirTela;
+
+public class TesteGoogle {
+
+	@Test
+	public void teste() {
+		WebDriver driver = AbrirTela.abreTela();
+		driver.get("http://www.google.com.br");		
+		Assert.assertEquals("Google", driver.getTitle().toString());
+		driver.quit(); //fecha tudo -> close fecha só a aba
+	}
+
+}

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TesteCadastro" project="CursoSelenium01" tests="6" started="6" failures="0" errors="0" ignored="1">
+  <testsuite name="br.com.lanza.source.TesteCadastro" time="49.718">
+    <testcase name="deveInteragirComAlertPrompt" classname="br.com.lanza.source.TesteCadastro" time="0.002" ignored="true"/>
+    <testcase name="verificaSexoObrigatorio" classname="br.com.lanza.source.TesteCadastro" time="11.761"/>
+    <testcase name="verificaPraticaEsportes" classname="br.com.lanza.source.TesteCadastro" time="12.717"/>
+    <testcase name="verificaComidaFavorita" classname="br.com.lanza.source.TesteCadastro" time="9.305"/>
+    <testcase name="verificaSobrenomeObrigatorio" classname="br.com.lanza.source.TesteCadastro" time="8.076"/>
+    <testcase name="verificaNomeObrigatorio" classname="br.com.lanza.source.TesteCadastro" time="7.857"/>
+  </testsuite>
+</testrun>
