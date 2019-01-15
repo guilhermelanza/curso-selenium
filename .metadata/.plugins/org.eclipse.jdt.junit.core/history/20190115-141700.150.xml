@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="TesteFramesJanelas" project="CursoSelenium01" tests="3" started="3" failures="0" errors="0" ignored="2">
-  <testsuite name="br.com.lanza.source.TesteFramesJanelas" time="11.348">
-    <testcase name="deveInteragirComAlertPrompt" classname="br.com.lanza.source.TesteFramesJanelas" time="0.0" ignored="true"/>
-    <testcase name="deveInteragirComJanelas" classname="br.com.lanza.source.TesteFramesJanelas" time="0.0" ignored="true"/>
-    <testcase name="deveInteragirComJanelasSemTitulo" classname="br.com.lanza.source.TesteFramesJanelas" time="11.348"/>
-  </testsuite>
-</testrun>

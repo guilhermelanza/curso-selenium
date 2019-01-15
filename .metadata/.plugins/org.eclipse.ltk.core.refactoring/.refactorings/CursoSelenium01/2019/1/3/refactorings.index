@@ -3,3 +3,10 @@
 1547566608930	Rename type 'TesteFrames'
 1547566968246	Rename type 'AbrirTela'
 1547571586402	Delete elements
+1547579533447	Rename method 'preencheCampo'
+1547579548885	Rename method 'obterValorCampo'
+1547579559810	Rename method 'clicarRadio'
+1547580037164	Rename method 'fillField'
+1547580054948	Rename method 'getFieldValue'
+1547580074197	Rename method 'clickRadio'
+1547580097379	Rename method 'isRadioChecked'

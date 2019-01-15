@@ -15,6 +15,7 @@ import org.openqa.selenium.support.ui.Select;
 public class TesteCadastro {
 
 	private WebDriver driver;
+	private DSL dsl;
 	
 	@Before
 	public void inicializaTeste() {
@@ -22,6 +23,7 @@ public class TesteCadastro {
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get(System.getProperty("user.dir") + "/src/main/resources/componentes.html");
+		dsl = new DSL(driver);
 	}
 	
 	@After
@@ -30,6 +32,7 @@ public class TesteCadastro {
 	}
 
 	@Test
+	@Ignore
 	public void verificaNomeObrigatorio() {
 		driver.findElement(By.id("elementosForm:cadastrar")).click();
 		Alert alerta = driver.switchTo().alert();
@@ -39,9 +42,9 @@ public class TesteCadastro {
 	}
 
 	@Test
-	@Ignore
 	public void verificaSobrenomeObrigatorio() {
-		driver.findElement(By.id("elementosForm:nome")).sendKeys("Guilherme");
+		//driver.findElement(By.id("elementosForm:nome")).sendKeys("Guilherme");
+		dsl.preencherCampo("elementosForm:nome", "Guilherme");
 
 		driver.findElement(By.id("elementosForm:cadastrar")).click();
 		Alert alerta = driver.switchTo().alert();
