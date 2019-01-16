@@ -12,10 +12,7 @@
 <fullyQualifiedTypeName name="AbrirTela"/>
 <fullyQualifiedTypeName name="java.lang.String"/>
 <fullyQualifiedTypeName name="org.junit.Before"/>
-<fullyQualifiedTypeName name="org.junit.Ignore"/>
 <fullyQualifiedTypeName name="org.junit.After"/>
-<fullyQualifiedTypeName name="org.openqa.selenium.By"/>
-<fullyQualifiedTypeName name="org.openqa.selenium.WebElement"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.support.ui.Select"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.WebDriver"/>
 <fullyQualifiedTypeName name="br.com.lanza.source.DSL"/>
@@ -23,9 +20,18 @@
 <fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="java.util.Collection"/>
 <fullyQualifiedTypeName name="java.util.Arrays"/>
-<fullyQualifiedTypeName name="java.lang.Object"/>
 <fullyQualifiedTypeName name="org.junit.runners.Parameterized.Parameters"/>
 <fullyQualifiedTypeName name="org.junit.runners.Parameterized.Parameter"/>
-<fullyQualifiedTypeName name="org.junit.runner.RunWith"/>
 <fullyQualifiedTypeName name="org.junit.runners.Parameterized"/>
+<fullyQualifiedTypeName name="org.junit.runner.RunWith"/>
+<fullyQualifiedTypeName name="org.junit.runners.Suite"/>
+<fullyQualifiedTypeName name="org.junit.runners.Suite.SuiteClasses"/>
+<fullyQualifiedTypeName name="br.com.lanza.source.TesteCadastro"/>
+<fullyQualifiedTypeName name="br.com.lanza.source.TesteRegrasCadastro"/>
+<fullyQualifiedTypeName name="br.com.lanza.source.TesteCampoTreinamento"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.JavascriptExecutor"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.By"/>
+<fullyQualifiedTypeName name="java.lang.Object"/>
+<fullyQualifiedTypeName name="org.junit.Ignore"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.WebElement"/>
 </qualifiedTypeNameHistroy>
