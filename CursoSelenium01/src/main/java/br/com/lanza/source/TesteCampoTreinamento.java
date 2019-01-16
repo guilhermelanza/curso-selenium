@@ -110,5 +110,4 @@ public class TesteCampoTreinamento {
 
 		Assert.assertEquals("Cuidado onde clica, muitas armadilhas...", dsl.obterTexto(By.className("facilAchar")));
 	}
-
 }

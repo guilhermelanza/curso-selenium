@@ -69,7 +69,8 @@ public class TesteRegrasCadastro {
 
 		if (sexo.equals("Masculino")) {
 			page.setSexoMasculino();
-		} else {
+		} 
+		if (sexo.equals("Feminino")){
 			page.setSexoFeminino();
 		}
 

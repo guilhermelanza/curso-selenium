@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TesteRegrasCadastro" project="CursoSelenium01" tests="5" started="5" failures="0" errors="0" ignored="0">
+  <testsuite name="br.com.lanza.source.TesteRegrasCadastro" time="37.928">
+    <testsuite name="[0]" time="8.231">
+      <testcase name="deveValidarRegras[0]" classname="br.com.lanza.source.TesteRegrasCadastro" time="8.231"/>
+    </testsuite>
+    <testsuite name="[1]" time="6.142">
+      <testcase name="deveValidarRegras[1]" classname="br.com.lanza.source.TesteRegrasCadastro" time="6.142"/>
+    </testsuite>
+    <testsuite name="[2]" time="8.283">
+      <testcase name="deveValidarRegras[2]" classname="br.com.lanza.source.TesteRegrasCadastro" time="8.283"/>
+    </testsuite>
+    <testsuite name="[3]" time="7.85">
+      <testcase name="deveValidarRegras[3]" classname="br.com.lanza.source.TesteRegrasCadastro" time="7.85"/>
+    </testsuite>
+    <testsuite name="[4]" time="7.422">
+      <testcase name="deveValidarRegras[4]" classname="br.com.lanza.source.TesteRegrasCadastro" time="7.422"/>
+    </testsuite>
+  </testsuite>
+</testrun>

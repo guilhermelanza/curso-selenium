@@ -10,7 +10,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class TesteCadastro {
 
 	private WebDriver driver;
-	private DSL dsl;
 	private CampoTreinamentoPage page;
 
 	@Before
@@ -19,7 +18,6 @@ public class TesteCadastro {
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get(System.getProperty("user.dir") + "/src/main/resources/componentes.html");
-		dsl = new DSL(driver);
 		page = new CampoTreinamentoPage(driver);
 	}
 
@@ -46,48 +44,4 @@ public class TesteCadastro {
 		Assert.assertEquals("Escolaridade: superior", page.obterEscolaridadeCadastro());
 		Assert.assertEquals("Esportes: Natacao", page.obterEsporteCadastro());
 	}
-
-	@Test
-	public void deveValidarNomeObrigatorio() {
-		page.botaoCadastrar();
-		Assert.assertEquals("Nome eh obrigatorio", dsl.alertaObterTextoEAceita());
-	}
-
-	@Test
-	public void deveValidarSobrenomeObrigatorio() {
-		page.setNome("Nome Teste");
-		page.botaoCadastrar();
-		Assert.assertEquals("Sobrenome eh obrigatorio", dsl.alertaObterTextoEAceita());
-	}
-
-	@Test
-	public void deveValidarSexoObrigatorio() {
-		page.setNome("Nome Teste");
-		page.setSobrenome("Sobrenome Teste");
-		page.botaoCadastrar();
-		Assert.assertEquals("Sexo eh obrigatorio", dsl.alertaObterTextoEAceita());
-	}
-
-	@Test
-	public void deveValidarComidaVegetariana() {
-		page.setNome("Nome Teste");
-		page.setSobrenome("Sobrenome Teste");
-		page.setSexoMasculino();
-		page.setComidaCarne();
-		page.setComidaVegetariano();
-		page.botaoCadastrar();
-		Assert.assertEquals("Tem certeza que voce eh vegetariano?", dsl.alertaObterTextoEAceita());
-	}
-
-	@Test
-	public void deveValidarEsporte() {
-		page.setNome("Nome Teste");
-		page.setSobrenome("Sobrenome Teste");
-		page.setSexoMasculino();
-		page.setComidaCarne();
-		page.setEsporte("Corrida", "O que eh esporte?");
-		page.botaoCadastrar();
-		Assert.assertEquals("Voce faz esporte ou nao?", dsl.alertaObterTextoEAceita());
-	}
-
 }
