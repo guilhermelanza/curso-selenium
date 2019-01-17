@@ -10,3 +10,5 @@
 1547580054948	Rename method 'getFieldValue'
 1547580074197	Rename method 'clickRadio'
 1547580097379	Rename method 'isRadioChecked'
+1547726130062	Extract method 'obterIndiceColuna'
+1547727166877	Extract method 'obterIndiceLinha'

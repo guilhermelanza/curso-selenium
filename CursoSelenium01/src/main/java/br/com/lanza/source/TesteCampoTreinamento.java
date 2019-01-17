@@ -6,6 +6,7 @@ import java.util.List;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -27,16 +28,18 @@ public class TesteCampoTreinamento {
 
 	@After
 	public void finalizaTeste() {
-		driver.quit();
+		//driver.quit();
 	}
 
 	@Test
+	@Ignore
 	public void testeTextField() {
 		dsl.escrever("elementosForm:nome", "Teste de escrita");
 		Assert.assertEquals("Teste de escrita", dsl.obterValorCampo("elementosForm:nome"));
 	}
 
 	@Test
+	@Ignore
 	public void testTextFieldDuplo() {
 		dsl.escrever("elementosForm:nome", "Wagner");
 		Assert.assertEquals("Wagner", dsl.obterValorCampo("elementosForm:nome"));
@@ -45,36 +48,42 @@ public class TesteCampoTreinamento {
 	}
 
 	@Test
+	@Ignore
 	public void deveIntegarirComTextArea() {
 		dsl.escrever("elementosForm:sugestoes", "teste\n\naasldjdlks\nUltima linha");
 		Assert.assertEquals("teste\n\naasldjdlks\nUltima linha", dsl.obterValorCampo("elementosForm:sugestoes"));
 	}
 
 	@Test
+	@Ignore
 	public void deveIntegarirComRadioButton() {
 		dsl.clicarRadio("elementosForm:sexo:0");
 		Assert.assertTrue(dsl.isRadioMarcado("elementosForm:sexo:0"));
 	}
 
 	@Test
+	@Ignore
 	public void deveIntegarirComCheckbox() {
 		dsl.clicarCheck("elementosForm:comidaFavorita:2");
 		Assert.assertTrue(dsl.isCheckMarcado("elementosForm:comidaFavorita:2"));
 	}
 
 	@Test
+	@Ignore
 	public void deveIntegarirComCombo() {
 		dsl.selecionarCombo("elementosForm:escolaridade", "2o grau completo");
 		Assert.assertEquals("2o grau completo", dsl.obterValorCombo("elementosForm:escolaridade"));
 	}
 
 	@Test
+	@Ignore
 	public void deveVerificarValoresCombo() {
 		Assert.assertEquals(8, dsl.obterQuantidadeOpcoesCombo("elementosForm:escolaridade"));
 		Assert.assertTrue(dsl.verificarOpcaoCombo("elementosForm:escolaridade", "Mestrado"));
 	}
 
 	@Test
+	@Ignore
 	public void deveVerificarValoresComboMultiplo() {
 		dsl.selecionarCombo("elementosForm:esportes", "Natacao");
 		dsl.selecionarCombo("elementosForm:esportes", "Corrida");
@@ -90,12 +99,14 @@ public class TesteCampoTreinamento {
 	}
 
 	@Test
+	@Ignore
 	public void deveinteragirComBotoes() {
 		dsl.clicarBotao("buttonSimple");
 		Assert.assertEquals("Obrigado!", dsl.obterValueElemento("buttonSimple"));
 	}
 
 	@Test
+	@Ignore
 	public void deveinteragirComLinks() {
 		dsl.clicarLink("Voltar");
 
@@ -103,11 +114,15 @@ public class TesteCampoTreinamento {
 	}
 
 	@Test
+	@Ignore
 	public void deveBuscarTextosNaPagina() {
-//		Assert.assertTrue(driver.findElement(By.tagName("body"))
-//				.getText().contains("Campo de Treinamento"));
 		Assert.assertEquals("Campo de Treinamento", dsl.obterTexto(By.tagName("h3")));
-
 		Assert.assertEquals("Cuidado onde clica, muitas armadilhas...", dsl.obterTexto(By.className("facilAchar")));
 	}
+	
+	@Test
+	public void deveClicarBotaoTabela() {
+		dsl.clicarBotaoTabela("Escolaridade", "Mestrado", "Radio", "elementosForm:tableUsuarios");
+	}
+	
 }
