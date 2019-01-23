@@ -110,10 +110,14 @@ public class BasePage {
 
 	/********* Botao ************/
 
-	public void clicarBotao(String id) {
-		DriverFactory.getDriver().findElement(By.id(id)).click();
+	public void clicarBotao(By by) {
+		DriverFactory.getDriver().findElement(by).click();
 	}
 
+	public void clicarBotao(String id) {
+		clicarBotao(By.id(id));
+	}
+	
 	public String obterValueElemento(String id) {
 		return DriverFactory.getDriver().findElement(By.id(id)).getAttribute("value");
 	}
@@ -186,9 +190,9 @@ public class BasePage {
 
 	/************ Tabela ****************/
 
-	public void clicarBotaoTabela(String colunaBusca, String valor, String colunaBotao, String idTabela) {
+	public WebElement obterCelula(String colunaBusca, String valor, String colunaBotao, String idTabela) {
 		// procurar coluna do registro
-		WebElement tabela = DriverFactory.getDriver().findElement(By.xpath("//*[@id='elementosForm:tableUsuarios']"));
+		WebElement tabela = DriverFactory.getDriver().findElement(By.xpath("//*[@id='"+idTabela+"']"));
 		int idColuna = obterIndiceColuna(colunaBusca, tabela);
 
 		// encontrar a linha do registro
@@ -199,6 +203,12 @@ public class BasePage {
 
 		// clicar no botao da celula encontrada
 		WebElement celula = tabela.findElement(By.xpath(".//tr[" + idLinha + "]/td[" + idColunaBotao + "]"));
+		return celula;
+	}
+	
+	public void clicarBotaoTabela(String colunaBusca, String valor, String colunaBotao, String idTabela) {
+		// clicar no botao da celula encontrada
+		WebElement celula = obterCelula(colunaBusca, valor, colunaBotao, idTabela);
 		celula.findElement(By.xpath(".//input")).click();
 
 	}
