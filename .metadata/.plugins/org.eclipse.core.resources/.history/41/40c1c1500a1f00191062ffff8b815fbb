@@ -1,0 +1,19 @@
+package br.com.lanza.core;
+
+import org.junit.After;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+
+public class BaseTest {
+
+	@After
+	public void finaliza() {
+		TakesScreenshot ss = (TakesScreenshot) DriverFactory.getDriver();
+		ss.getScreenshotAs(OutputType.FILE);
+		
+		if (Propriedades.FECHAR_BROWSER) {
+			DriverFactory.killDriver();
+		}
+	}
+
+}

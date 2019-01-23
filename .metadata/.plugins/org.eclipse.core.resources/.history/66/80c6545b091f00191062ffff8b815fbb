@@ -1,0 +1,14 @@
+package br.com.lanza.core;
+
+import org.junit.After;
+
+public class BaseTest {
+
+	@After
+	public void finalizaTeste() {
+		if (Propriedades.FECHAR_BROWSER) {
+			DriverFactory.killDriver();
+		}
+	}
+
+}

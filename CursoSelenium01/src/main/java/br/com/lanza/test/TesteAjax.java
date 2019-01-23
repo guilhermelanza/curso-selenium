@@ -1,0 +1,39 @@
+package br.com.lanza.test;
+
+import org.junit.After;
+import org.junit.Assert;
+import org.junit.Before;
+import org.junit.Test;
+import org.openqa.selenium.By;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import br.com.lanza.core.DSL;
+import br.com.lanza.core.DriverFactory;
+
+public class TesteAjax {
+
+	private DSL dsl;
+
+	@Before
+	public void inicializaTeste() {
+		DriverFactory.getDriver().get("https://www.primefaces.org/showcase/ui/ajax/basic.xhtml");				
+		dsl = new DSL();
+	}
+
+	@After
+	public void finalizaTeste() {
+		DriverFactory.killDriver();
+	}
+	
+	@Test
+	public void testeAjax() {
+		dsl.escrever("j_idt694:name", "Teste");
+		dsl.clicarBotao("j_idt694:j_idt697");
+		WebDriverWait wait = new WebDriverWait(DriverFactory.getDriver(), 30);		
+		//wait.until(ExpectedConditions.textToBe(By.id("j_idt694:display"), "Teste")); //Aguarda aparecer o campo na tela
+		wait.until(ExpectedConditions.invisibilityOfElementLocated(By.id("j_idt709_start"))); //Aguarda o spin de carregamento sumir
+		Assert.assertEquals("Teste", dsl.obterTexto("j_idt694:display"));
+	}
+
+}
