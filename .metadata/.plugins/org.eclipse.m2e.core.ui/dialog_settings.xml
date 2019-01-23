@@ -7,6 +7,7 @@
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="ProjetoBasico"/>
 			<item value="CursoSelenium01"/>
 		</list>
 		<list key="projectNameTemplate">

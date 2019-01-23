@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="TesteCadastro" project="CursoSelenium01" tests="1" started="1" failures="0" errors="0" ignored="0">
-  <testsuite name="br.com.lanza.source.TesteCadastro" time="7.856">
-    <testcase name="deveRealizarCadastroComSucesso" classname="br.com.lanza.source.TesteCadastro" time="7.856"/>
-  </testsuite>
-</testrun>
