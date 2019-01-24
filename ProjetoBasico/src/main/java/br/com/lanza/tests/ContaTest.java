@@ -6,6 +6,7 @@ import org.junit.Test;
 import org.junit.runners.MethodSorters;
 
 import br.com.lanza.core.BaseTest;
+import br.com.lanza.core.Propriedades;
 import br.com.lanza.pages.ContasPage;
 import br.com.lanza.pages.MenuPage;
 
@@ -31,19 +32,19 @@ public class ContaTest extends BaseTest {
 
 		contasPage.clicarAlterarConta("Conta do Teste");
 
-		contasPage.setNome("Conta do Teste alterada");
+		contasPage.setNome(Propriedades.NOME_CONTA_ALTERADA);
 		contasPage.salvar();
 
 		Assert.assertEquals("Conta alterada com sucesso!", contasPage.obterMensagemSucesso());
 	}
 
 	@Test
-	public void test3_InserirContaMesmoNome() throws InterruptedException {
+	public void test3_InserirContaMesmoNome() {
 		menuPage.acessarTelaInserirConta();
 
-		contasPage.setNome("Conta do Teste Alterada");
+		contasPage.setNome(Propriedades.NOME_CONTA_ALTERADA);
 		contasPage.salvar();
-		Thread.sleep(3000);
+
 		Assert.assertEquals("Já existe uma conta com esse nome!", contasPage.obterMensagemErro());
 	}
 
