@@ -1,16 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="org.openqa.selenium.Alert"/>
-<fullyQualifiedTypeName name="AbrirTela"/>
-<fullyQualifiedTypeName name="org.openqa.selenium.support.ui.Select"/>
-<fullyQualifiedTypeName name="br.com.lanza.source.CampoTreinamentoPage"/>
-<fullyQualifiedTypeName name="java.util.Collection"/>
-<fullyQualifiedTypeName name="org.junit.runners.Parameterized.Parameters"/>
-<fullyQualifiedTypeName name="org.junit.runners.Parameterized.Parameter"/>
 <fullyQualifiedTypeName name="org.junit.runners.Parameterized"/>
-<fullyQualifiedTypeName name="org.junit.runner.RunWith"/>
-<fullyQualifiedTypeName name="org.junit.runners.Suite"/>
-<fullyQualifiedTypeName name="org.junit.runners.Suite.SuiteClasses"/>
 <fullyQualifiedTypeName name="br.com.lanza.source.TesteCadastro"/>
 <fullyQualifiedTypeName name="br.com.lanza.source.TesteRegrasCadastro"/>
 <fullyQualifiedTypeName name="br.com.lanza.source.TesteCampoTreinamento"/>
@@ -41,7 +31,6 @@
 <fullyQualifiedTypeName name="br.com.lanza.pages.ContasPage"/>
 <fullyQualifiedTypeName name="javax.swing.plaf.metal.MetalPopupMenuSeparatorUI"/>
 <fullyQualifiedTypeName name="br.com.lanza.core.BaseTest"/>
-<fullyQualifiedTypeName name="br.com.lanza.core.DriverFactory"/>
 <fullyQualifiedTypeName name="br.com.lanza.pages.MovimentacaoPage"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.WebElement"/>
@@ -60,4 +49,15 @@
 <fullyQualifiedTypeName name="org.junit.Test"/>
 <fullyQualifiedTypeName name="org.junit.Assert"/>
 <fullyQualifiedTypeName name="br.com.lanza.pages.HomePage"/>
+<fullyQualifiedTypeName name="br.com.lanza.core.DriverFactory"/>
+<fullyQualifiedTypeName name="org.junit.FixMethodOrder"/>
+<fullyQualifiedTypeName name="org.junit.runners.MethodSorters"/>
+<fullyQualifiedTypeName name="org.junit.runner.RunWith"/>
+<fullyQualifiedTypeName name="org.junit.runners.Suite"/>
+<fullyQualifiedTypeName name="org.junit.runners.Suite.SuiteClasses"/>
+<fullyQualifiedTypeName name="br.com.lanza.tests.ContaTest"/>
+<fullyQualifiedTypeName name="br.com.lanza.tests.MovimentacaoTest"/>
+<fullyQualifiedTypeName name="br.com.lanza.tests.RemoverMovimentacaoContaTest"/>
+<fullyQualifiedTypeName name="br.com.lanza.tests.SaldoTest"/>
+<fullyQualifiedTypeName name="br.com.lanza.tests.ResumoTest"/>
 </qualifiedTypeNameHistroy>

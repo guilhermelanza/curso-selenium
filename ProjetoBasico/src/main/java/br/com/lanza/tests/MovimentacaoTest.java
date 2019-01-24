@@ -5,7 +5,6 @@ import java.util.Date;
 import java.util.List;
 
 import org.junit.Assert;
-import org.junit.Ignore;
 import org.junit.Test;
 
 import br.com.lanza.core.BaseTest;
@@ -19,15 +18,14 @@ public class MovimentacaoTest extends BaseTest {
 	private MovimentacaoPage movPage = new MovimentacaoPage();
 
 	@Test
-	@Ignore
-	public void testInserirMovimentacao() {
+	public void test1_InserirMovimentacao() {
 		menuPage.acessarTelaInserirMovimentacao();
 
 		movPage.setDataMovimentacao(DataUtils.obterDataFormatada(new Date()));
 		movPage.setDataPagamento(DataUtils.obterDataFormatada(new Date()));
 		movPage.setDescricao("Movimentação do Teste");
 		movPage.setInteressado("Interessado Teste");
-		movPage.setValor("200");
+		movPage.setValor("123");
 		movPage.setConta("Conta do Teste Alterada");
 		movPage.setStatusPago();
 		movPage.salvar();
@@ -36,8 +34,7 @@ public class MovimentacaoTest extends BaseTest {
 	}
 
 	@Test
-	@Ignore
-	public void testCamposObrigatorios() {
+	public void test2_CamposObrigatorios() {
 		menuPage.acessarTelaInserirMovimentacao();
 
 		movPage.salvar();
@@ -51,8 +48,7 @@ public class MovimentacaoTest extends BaseTest {
 	}
 
 	@Test
-	@Ignore
-	public void testInserirMovimentacaoFutura() {
+	public void test3_InserirMovimentacaoFutura() {
 		menuPage.acessarTelaInserirMovimentacao();
 		
 		String dataFutura = DataUtils.obterDataFutura(3);
@@ -61,7 +57,7 @@ public class MovimentacaoTest extends BaseTest {
 		movPage.setDataPagamento(dataFutura);
 		movPage.setDescricao("Movimentação do Teste");
 		movPage.setInteressado("Interessado Teste");
-		movPage.setValor("200");
+		movPage.setValor("123");
 		movPage.setConta("Conta do Teste Alterada");
 		movPage.setStatusPago();
 		movPage.salvar();
