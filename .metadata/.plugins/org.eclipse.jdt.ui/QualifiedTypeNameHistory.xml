@@ -1,10 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="org.openqa.selenium.chrome.ChromeDriver"/>
-<fullyQualifiedTypeName name="org.openqa.selenium.Point"/>
-<fullyQualifiedTypeName name="org.openqa.selenium.Dimension"/>
-<fullyQualifiedTypeName name="com.sun.jna.platform.win32.Netapi32Util.User"/>
-<fullyQualifiedTypeName name="junit.framework.Assert"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.Alert"/>
 <fullyQualifiedTypeName name="AbrirTela"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.support.ui.Select"/>
@@ -44,11 +39,7 @@
 <fullyQualifiedTypeName name="br.com.lanza.core.BasePage"/>
 <fullyQualifiedTypeName name="br.com.lanza.pages.LoginPage"/>
 <fullyQualifiedTypeName name="br.com.lanza.pages.ContasPage"/>
-<fullyQualifiedTypeName name="org.openqa.selenium.By"/>
 <fullyQualifiedTypeName name="javax.swing.plaf.metal.MetalPopupMenuSeparatorUI"/>
-<fullyQualifiedTypeName name="org.junit.Test"/>
-<fullyQualifiedTypeName name="br.com.lanza.pages.MenuPage"/>
-<fullyQualifiedTypeName name="org.junit.Assert"/>
 <fullyQualifiedTypeName name="br.com.lanza.core.BaseTest"/>
 <fullyQualifiedTypeName name="br.com.lanza.core.DriverFactory"/>
 <fullyQualifiedTypeName name="br.com.lanza.pages.MovimentacaoPage"/>
@@ -57,5 +48,16 @@
 <fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="java.lang.String"/>
 <fullyQualifiedTypeName name="java.util.Arrays"/>
+<fullyQualifiedTypeName name="java.util.Calendar"/>
+<fullyQualifiedTypeName name="java.text.DateFormat"/>
+<fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
+<fullyQualifiedTypeName name="java.util.Date"/>
+<fullyQualifiedTypeName name="br.com.lanza.pages.MenuPage"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.By"/>
+<fullyQualifiedTypeName name="br.com.lanza.pages.ResumoPage"/>
+<fullyQualifiedTypeName name="br.com.lanza.utils.DataUtils"/>
 <fullyQualifiedTypeName name="org.junit.Ignore"/>
+<fullyQualifiedTypeName name="org.junit.Test"/>
+<fullyQualifiedTypeName name="org.junit.Assert"/>
+<fullyQualifiedTypeName name="br.com.lanza.pages.HomePage"/>
 </qualifiedTypeNameHistroy>

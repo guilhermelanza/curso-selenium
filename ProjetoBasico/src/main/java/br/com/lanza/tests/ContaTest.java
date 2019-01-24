@@ -37,14 +37,23 @@ public class ContaTest extends BaseTest {
 	}
 	
 	@Test
-	public void testInserirContaMesmoNome() throws InterruptedException {
+	@Ignore
+	public void testInserirContaMesmoNome() {
 		menuPage.acessarTelaInserirConta();
 		
 		contasPage.setNome("Conta do Teste Alterada");
-		contasPage.salvar();
-		//Thread.sleep(5000);
+		contasPage.salvar();		
 		
 		Assert.assertEquals("Já existe uma conta com esse nome!", contasPage.obterMensagemErro());
+	}
+	
+	@Test
+	public void testExcluirContaComMovimentacao() {
+		menuPage.acessarTelaListarConta();
+		
+		contasPage.clicarExcluirConta("Conta do Teste Alterada");
+		
+		Assert.assertEquals("Conta em uso na movimentações", contasPage.obterMensagemErro());
 	}
 
 }
