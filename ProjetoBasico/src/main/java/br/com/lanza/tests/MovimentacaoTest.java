@@ -8,7 +8,6 @@ import org.junit.Assert;
 import org.junit.Test;
 
 import br.com.lanza.core.BaseTest;
-import br.com.lanza.core.Propriedades;
 import br.com.lanza.pages.MenuPage;
 import br.com.lanza.pages.MovimentacaoPage;
 import br.com.lanza.utils.DataUtils;
@@ -27,7 +26,7 @@ public class MovimentacaoTest extends BaseTest {
 		movPage.setDescricao("Movimentação do Teste");
 		movPage.setInteressado("Interessado Teste");
 		movPage.setValor("123");
-		movPage.setConta(Propriedades.NOME_CONTA_ALTERADA);
+		movPage.setConta("Conta para movimentacoes");
 		movPage.setStatusPago();
 		movPage.salvar();
 
@@ -59,7 +58,7 @@ public class MovimentacaoTest extends BaseTest {
 		movPage.setDescricao("Movimentação do Teste");
 		movPage.setInteressado("Interessado Teste");
 		movPage.setValor("123");
-		movPage.setConta(Propriedades.NOME_CONTA_ALTERADA);
+		movPage.setConta("Conta para movimentacoes");
 		movPage.setStatusPago();
 		movPage.salvar();
 

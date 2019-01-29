@@ -5,8 +5,10 @@
 			<item value="br.com.lanza"/>
 		</list>
 		<list key="name">
+			<item value="SaldoAlelo"/>
 		</list>
 		<list key="artifactId">
+			<item value="VerificaAlelo"/>
 			<item value="ProjetoBasico"/>
 			<item value="CursoSelenium01"/>
 		</list>

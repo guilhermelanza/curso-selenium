@@ -1,20 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="org.junit.runners.Parameterized"/>
-<fullyQualifiedTypeName name="br.com.lanza.source.TesteCadastro"/>
-<fullyQualifiedTypeName name="br.com.lanza.source.TesteRegrasCadastro"/>
-<fullyQualifiedTypeName name="br.com.lanza.source.TesteCampoTreinamento"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.JavascriptExecutor"/>
 <fullyQualifiedTypeName name="java.lang.Object"/>
 <fullyQualifiedTypeName name="br.com.lanza.source.DSL"/>
-<fullyQualifiedTypeName name="java.lang.Thread"/>
 <fullyQualifiedTypeName name="java.util.concurrent.TimeUnit"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.support.ui.ExpectedCondition"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.support.ui.WebDriverWait"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.support.ui.ExpectedConditions"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.WebDriver"/>
 <fullyQualifiedTypeName name="br.com.lanza.core.DSL"/>
-<fullyQualifiedTypeName name="org.junit.AfterClass"/>
 <fullyQualifiedTypeName name="org.junit.After"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.TakesScreenshot"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.OutputType"/>
@@ -22,19 +16,15 @@
 <fullyQualifiedTypeName name="java.io.File"/>
 <fullyQualifiedTypeName name="org.junit.Rule"/>
 <fullyQualifiedTypeName name="org.junit.rules.TestName"/>
-<fullyQualifiedTypeName name="br.com.lanza.core.Propriedades"/>
 <fullyQualifiedTypeName name="br.com.lanza.core.Propriedades.Browsers"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.firefox.FirefoxDriver"/>
 <fullyQualifiedTypeName name="org.junit.Before"/>
 <fullyQualifiedTypeName name="br.com.lanza.core.BasePage"/>
-<fullyQualifiedTypeName name="br.com.lanza.pages.LoginPage"/>
 <fullyQualifiedTypeName name="br.com.lanza.pages.ContasPage"/>
 <fullyQualifiedTypeName name="javax.swing.plaf.metal.MetalPopupMenuSeparatorUI"/>
 <fullyQualifiedTypeName name="br.com.lanza.core.BaseTest"/>
 <fullyQualifiedTypeName name="br.com.lanza.pages.MovimentacaoPage"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
-<fullyQualifiedTypeName name="org.openqa.selenium.WebElement"/>
-<fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="java.lang.String"/>
 <fullyQualifiedTypeName name="java.util.Arrays"/>
 <fullyQualifiedTypeName name="java.util.Calendar"/>
@@ -42,14 +32,9 @@
 <fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
 <fullyQualifiedTypeName name="java.util.Date"/>
 <fullyQualifiedTypeName name="br.com.lanza.pages.MenuPage"/>
-<fullyQualifiedTypeName name="org.openqa.selenium.By"/>
 <fullyQualifiedTypeName name="br.com.lanza.pages.ResumoPage"/>
-<fullyQualifiedTypeName name="br.com.lanza.utils.DataUtils"/>
 <fullyQualifiedTypeName name="org.junit.Ignore"/>
-<fullyQualifiedTypeName name="org.junit.Test"/>
-<fullyQualifiedTypeName name="org.junit.Assert"/>
 <fullyQualifiedTypeName name="br.com.lanza.pages.HomePage"/>
-<fullyQualifiedTypeName name="br.com.lanza.core.DriverFactory"/>
 <fullyQualifiedTypeName name="org.junit.FixMethodOrder"/>
 <fullyQualifiedTypeName name="org.junit.runners.MethodSorters"/>
 <fullyQualifiedTypeName name="org.junit.runner.RunWith"/>
@@ -60,4 +45,19 @@
 <fullyQualifiedTypeName name="br.com.lanza.tests.RemoverMovimentacaoContaTest"/>
 <fullyQualifiedTypeName name="br.com.lanza.tests.SaldoTest"/>
 <fullyQualifiedTypeName name="br.com.lanza.tests.ResumoTest"/>
+<fullyQualifiedTypeName name="org.junit.BeforeClass"/>
+<fullyQualifiedTypeName name="org.junit.AfterClass"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="br.com.lanza.core.Propriedades"/>
+<fullyQualifiedTypeName name="org.junit.Test"/>
+<fullyQualifiedTypeName name="br.com.lanza.pages.LoginPage"/>
+<fullyQualifiedTypeName name="java.lang.Thread"/>
+<fullyQualifiedTypeName name="br.com.lanza.utils.DataUtils"/>
+<fullyQualifiedTypeName name="br.com.lanza.core.DriverFactory"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.By"/>
+<fullyQualifiedTypeName name="java.util.NoSuchElementException"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.NoSuchElementException"/>
+<fullyQualifiedTypeName name="org.junit.Assert"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.WebElement"/>
 </qualifiedTypeNameHistroy>

@@ -5,7 +5,6 @@ import java.util.List;
 import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.By;
-import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebElement;
 
 import br.com.lanza.core.BaseTest;
@@ -40,6 +39,9 @@ public class ResumoTest extends BaseTest {
 		 * 
 		 * }
 		 */
+
+		resumoPage.selecionarCombo("2012");
+		resumoPage.buscar();
 
 		// ou pode fazer assim
 		List<WebElement> elementosEncontrados = DriverFactory.getDriver()
